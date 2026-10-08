@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<form action=""> 
+    <label> Number 1</label>
+    <input type="number" placeholder="Enter your Number 1" id="n">
+    <br><br>
+    <label placeholder="Enter your Number 2">Number 2</label>
+    <input type="number" placeholder="Enter your Number 2" id="n1">
+<br><br>
+<button id="btn">+</button>
+<button id="btn2">-</button>
+<button id="btn3">/</button>
+<button id="btn4">*</button>
+</form>
+<h1>Result:- <span id="r">1234</span></h1>
+
+<script>
+    var a=document.getElementById('btn')
+    a.addEventListener( 'click',function(hello){
+        hello.preventDefault()
+        var b=document.getElementById('n').value
+        var c=document.getElementById('n1').value
+        var Result=document.getElementById('r')
+        var add= parseInt(b) + parseInt(c)
+        Result.innerHTML=add
+        Result.style.backgroundColor="cyan"
+        Result.style.color="white"
+    })
+
+     var e1=document.getElementById('btn2')
+    e1.addEventListener( 'click',function(hello){
+        hello.preventDefault()
+        var b=document.getElementById('n').value
+        var c=document.getElementById('n1').value
+        var Result=document.getElementById('r')
+        var sub= parseInt(b) - parseInt(c)
+        Result.innerHTML=sub
+        Result.style.backgroundColor="red"
+        Result.style.color="white"
+    })
+
+
+    var d=document.getElementById('btn4')
+    d.addEventListener('click',function(helloo){
+        helloo.preventDefault()
+        var b=document.getElementById('n').value
+        var c=document.getElementById('n1').value
+        var R=document.getElementById('r')
+        var dd= parseInt(b)*parseInt(c)
+        R.innerHTML=dd
+        R.style.backgroundColor="green"
+        R.style.color="white"
+    })
+     var j=document.getElementById('btn3')
+    j.addEventListener( 'click',function(hello){
+        hello.preventDefault()
+        var b=document.getElementById('n').value
+        var c=document.getElementById('n1').value
+        var Result=document.getElementById('r')
+        var dd= parseInt(b) / parseInt(c)
+        Result.innerHTML=dd
+        Result.style.backgroundColor="blue"
+        Result.style.color="white"
+    })
+
+</script>
+
+    
+</body>
+</html>
